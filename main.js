@@ -43,6 +43,12 @@ function toggleCarritoAside() {
     }
 
     shoppingcartcontainer.classList.toggle('inactive');
+
+    const ismenucarritoiconclosed = menucarritoicon.classList.contains('inactive');
+
+    if (!ismenucarritoiconclosed) {
+        desktopmenu.classList.add('inactive')
+    }
 }
 
 function openProductDetailAside() {
